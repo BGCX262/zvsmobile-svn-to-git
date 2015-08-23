@@ -1,0 +1,73 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoDestroy": false,
+        "container|animation": null,
+        "designer|initialView": true,
+        "designer|userAlias": "mainview",
+        "designer|userClassName": "MainView",
+        "itemId": "mainView",
+        "requires": [
+            "Ext.Menu"
+        ]
+    },
+    "designerId": "faa0b672-f068-471f-a6d3-46b660667fb3",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "zVirtualScenes Mobile"
+            },
+            "name": "homepanel1",
+            "designerId": "611df710-4d88-48e6-b652-5631659fb354",
+            "masterInstanceId": "4845c96b-bcf7-4419-b852-0471958945f9"
+        },
+        {
+            "type": "Ext.navigation.Bar",
+            "reference": {
+                "name": "navigationBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoDestroy": false,
+                "centered": false,
+                "container|align": "center",
+                "designer|displayName": null,
+                "designer|uiInterfaceName": "neutral",
+                "docked": "top",
+                "itemId": "navBar",
+                "ui": "neutral"
+            },
+            "name": "MyNavigationBar",
+            "designerId": "0f1bbba6-fd7c-4481-b01a-5619bf8837f8",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "list",
+                        "itemId": "menuButton",
+                        "text": ""
+                    },
+                    "name": "MyButton",
+                    "designerId": "4e669aad-cf0b-4bd8-bc1b-a90720ca5001"
+                }
+            ]
+        }
+    ]
+}

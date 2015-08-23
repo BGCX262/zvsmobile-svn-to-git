@@ -1,0 +1,172 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "config": null,
+        "designer|userAlias": "devicespanel",
+        "designer|userClassName": "DevicesPanel",
+        "itemId": "devicesPanel",
+        "layout": "fit",
+        "requires": [
+            "Ext.SegmentedButton"
+        ]
+    },
+    "designerId": "12fcc33d-36a7-475b-8792-6b6c96745316",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "config",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.dataview.DataView",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "dataview-inline"
+                ],
+                "docked": null,
+                "inline": true,
+                "itemCls": "deviceItem",
+                "itemId": "deviceDataview",
+                "store": "DeviceStore",
+                "style": ""
+            },
+            "name": "MyDataView",
+            "configAlternates": {
+                "inline": "boolean"
+            },
+            "designerId": "c1687282-0160-4f26-92fa-ca483712cde1",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "itemTpl",
+                        "implHandler": [
+                            "<div class=\"device-item\">",
+                            "\t<h4 class=\"device-name-truncate\">{Name}</h4>  ",
+                            "    <i class=\"device-icon {type.UniqueIdentifier}\"></i> ",
+                            "    <div class=\"device-level\">",
+                            "\t\t\t{CurrentLevelText}",
+                            "\t\t</div>\t",
+                            "     <h5 class=\"location-name-truncate\">{Location}</h5>",
+                            "</div>"
+                        ]
+                    },
+                    "name": "itemTpl",
+                    "designerId": "8ce68141-8d96-44e5-b14d-b9e843127df6"
+                },
+                {
+                    "type": "Ext.Toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "designer|createAlias": "",
+                        "designer|uiInterfaceName": "neutral",
+                        "docked": "bottom",
+                        "height": 50,
+                        "id": null,
+                        "itemId": "deviceToolbar",
+                        "padding": 5,
+                        "scrollable": "horizontal",
+                        "ui": "neutral"
+                    },
+                    "name": "MyToolbar",
+                    "designerId": "0e77d338-af51-439d-bc18-a0c329b17791",
+                    "cn": [
+                        {
+                            "type": "Ext.SegmentedButton",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": null,
+                                "itemId": "filterSegmentedButton"
+                            },
+                            "name": "MySegmentedButton",
+                            "designerId": "8b10ecfe-1cbe-4f0f-991f-8bb287aeabd0",
+                            "cn": [
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "locationFilter": "all",
+                                        "pressed": true,
+                                        "text": "All"
+                                    },
+                                    "name": "MyButton4",
+                                    "designerId": "47b1cf17-ff49-4733-aec4-9082721610f5",
+                                    "customConfigs": [
+                                        {
+                                            "group": "(Custom Properties)",
+                                            "name": "locationFilter",
+                                            "type": "string"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MySpacer",
+                            "designerId": "10a7d678-0ca9-4f45-969a-6935fee0115f"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "baseCls": null,
+                                "border": null,
+                                "centered": false,
+                                "icon": null,
+                                "iconAlign": null,
+                                "iconCls": "refresh",
+                                "id": null,
+                                "itemId": "devicesReloadBtn",
+                                "style": null,
+                                "text": null,
+                                "ui": null
+                            },
+                            "name": "MyButton1",
+                            "designerId": "7318a77a-7937-4eb1-baed-0bbcd73b5fee"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

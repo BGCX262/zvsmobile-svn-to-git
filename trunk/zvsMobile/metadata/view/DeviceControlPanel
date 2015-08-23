@@ -1,0 +1,21 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "devicecontrolpanel",
+        "designer|userClassName": "DeviceControlPanel",
+        "id": null,
+        "itemId": "deviceControlPanel",
+        "requires": [
+            "Ext.field.Toggle",
+            "Ext.field.Select"
+        ],
+        "scrollable": "vertical"
+    },
+    "name": "SwitchControlPanel2",
+    "designerId": "0599d6d3-6430-4abc-acd2-a6797bbd23d2"
+}
